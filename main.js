@@ -39,7 +39,7 @@ engine.addTest(
                     .addToken(accessToken)
                 return productApi.call()
             },
-            shouldBe: new Unauthorized(400, 'bad request')
+            shouldBe: new BadRequest(400, 'bad request')
         },
     ]
 )
